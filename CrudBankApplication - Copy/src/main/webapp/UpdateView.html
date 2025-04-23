@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel=”stylesheet” type=”text/css” />
+<meta charset="ISO-8859-1">
+<title>Update</title>
+<style>
+td{
+	align-content: center;
+	padding: 10px;
+}
+input{
+	padding: 5px;
+	margin: 5px;
+}
+button,input[type="submit"],input[type="reset"]{
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h3><a href="Index.html"><button style="padding: 10px;">Home</button></a></h3>
+	<div align="center" style="margin-top: -50px">
+		<h1>Update Records</h1>
+	</div>
+	<form action="UpdateController">
+		<table  align="center" border="4px" style="border-collapse: collapse;">
+			<tr>
+				<td>Enter Number :</td>
+				<td><input type="text" name="accNumber" pattern="[0-9]*" maxlength="5" title="Only Numbers Are Accepted" required></td>
+			</tr>
+			<tr>
+				<td>Enter Balance To Update:</td>
+				<td><input type="text" name="accBal" pattern="[0-9]*[.,]?[0-9]*" required></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Update"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>

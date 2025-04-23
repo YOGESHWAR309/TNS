@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel=”stylesheet” type=”text/css” />
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<style>
+td{
+	align-content: center;
+	padding: 10px;
+}
+input{
+	padding: 5px;
+	margin: 5px;
+}
+button,input[type="submit"],input[type="reset"]{
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<h3><a href="Index.html"><button>Home</button></a></h3>
+	<div align="center" style="margin-top: -50px;">
+		<h1>User Registration</h1>
+	</div>
+	<form action="RegisterController">
+		<table  align="center" border="4px" style="border-collapse: collapse;">
+			<tr>
+				<td>Enter Number :</td>
+				<td><input type="text" name="accNumber" pattern="[0-9]*" maxlength="5" title="Only Numbers Are Accepted" required></td>
+			</tr>
+			<tr>
+				<td>Enter Name :</td>
+				<td><input type="text" name="custName" maxlength="20" required title="Max Length[20]"></td>
+			</tr>
+			<tr>
+				<td>Enter password :</td>
+				<td><input type="password" name="password" required></td>
+			</tr>
+			<tr>
+				<td>Enter Account Number :</td>
+				<td><input type="text" name="accBal" pattern="[0-9]*[.,]?[0-9]*" required ></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>
